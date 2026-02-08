@@ -1,26 +1,139 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "../styles/y2k.css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Ocean palette */
+  --color-ocean-50: #f0f9ff;
+  --color-ocean-100: #e0f2fe;
+  --color-ocean-200: #bae6fd;
+  --color-ocean-300: #7dd3fc;
+  --color-ocean-400: #38bdf8;
+  --color-ocean-500: #0ea5e9;
+  --color-ocean-600: #0284c7;
+  --color-ocean-700: #0369a1;
+  --color-ocean-800: #075985;
+  --color-ocean-900: #0c4a6e;
+  --color-ocean-950: #082f49;
+
+  /* Seafoam */
+  --color-seafoam-50: #f0fdf4;
+  --color-seafoam-100: #dcfce7;
+  --color-seafoam-200: #bbf7d0;
+  --color-seafoam-300: #86efac;
+  --color-seafoam-400: #4ade80;
+  --color-seafoam-500: #22d3a0;
+  --color-seafoam-600: #16a37a;
+  --color-seafoam-700: #15803d;
+  --color-seafoam-800: #166534;
+  --color-seafoam-900: #14532d;
+
+  /* Sunset */
+  --color-sunset-50: #fff7ed;
+  --color-sunset-100: #ffedd5;
+  --color-sunset-200: #fed7aa;
+  --color-sunset-300: #fdba74;
+  --color-sunset-400: #fb923c;
+  --color-sunset-500: #f97316;
+  --color-sunset-600: #ea580c;
+  --color-sunset-700: #c2410c;
+  --color-sunset-800: #9a3412;
+  --color-sunset-900: #7c2d12;
+
+  /* Coral */
+  --color-coral-50: #fff1f2;
+  --color-coral-100: #ffe4e6;
+  --color-coral-200: #fecdd3;
+  --color-coral-300: #fda4af;
+  --color-coral-400: #fb7185;
+  --color-coral-500: #f43f5e;
+  --color-coral-600: #e11d48;
+  --color-coral-700: #be123c;
+  --color-coral-800: #9f1239;
+  --color-coral-900: #881337;
+
+  /* Fog */
+  --color-fog-50: #faf5ff;
+  --color-fog-100: #f3e8ff;
+  --color-fog-200: #e9d5ff;
+  --color-fog-300: #d8b4fe;
+  --color-fog-400: #c084fc;
+  --color-fog-500: #a78bfa;
+  --color-fog-600: #8b5cf6;
+  --color-fog-700: #7c3aed;
+  --color-fog-800: #6d28d9;
+  --color-fog-900: #4c1d95;
+
+  /* Sand */
+  --color-sand-50: #fefce8;
+  --color-sand-100: #fef9c3;
+  --color-sand-200: #fef08a;
+  --color-sand-300: #fde047;
+  --color-sand-400: #facc15;
+  --color-sand-500: #d4a574;
+  --color-sand-600: #b8860b;
+  --color-sand-700: #92400e;
+  --color-sand-800: #78350f;
+  --color-sand-900: #451a03;
+
+  /* Fonts */
+  --font-comic: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', cursive;
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-display: 'Pacifico', cursive;
+
+  /* Animations */
+  --animate-marquee: marquee 20s linear infinite;
+  --animate-blink: blink 1s step-end infinite;
+  --animate-sparkle: sparkle 1.5s ease-in-out infinite;
+  --animate-wave-bob: wave-bob 3s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-rainbow-shift: rainbow-shift 3s linear infinite;
+  --animate-surf-ride: surf-ride 4s ease-in-out infinite;
+  --animate-spin-slow: spin 3s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+  }
+
+  @keyframes wave-bob {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(2deg); }
+    75% { transform: translateY(10px) rotate(-2deg); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes rainbow-shift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
+  @keyframes surf-ride {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #f0f9ff;
+  --foreground: #0c4a6e;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-comic);
 }

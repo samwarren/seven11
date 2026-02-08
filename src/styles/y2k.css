@@ -1,0 +1,326 @@
+/* ============================================
+   Y2K / Early 2000s Ocean Theme Styles
+   ============================================ */
+
+/* Custom cursor is handled by DogCursor component (hides real cursor, renders bouncing dog sprite) */
+
+/* Tiled Backgrounds */
+.bg-tile-ocean {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(34, 211, 160, 0.05) 0%, transparent 50%);
+  background-color: #f0f9ff;
+}
+
+.bg-tile-stars {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z' fill='%230ea5e9' fill-opacity='0.07'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+.bg-tile-waves {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='20' viewBox='0 0 120 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q15 0 30 10 Q45 20 60 10 Q75 0 90 10 Q105 20 120 10' fill='none' stroke='%230ea5e9' stroke-opacity='0.08' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Beveled / Embossed Border Effects */
+.bevel-raised {
+  border: 3px solid;
+  border-color: #e0f2fe #075985 #075985 #e0f2fe;
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.5),
+    inset -1px -1px 0 rgba(0,0,0,0.2),
+    2px 2px 4px rgba(0,0,0,0.15);
+}
+
+.bevel-sunken {
+  border: 3px solid;
+  border-color: #075985 #e0f2fe #e0f2fe #075985;
+  box-shadow:
+    inset 1px 1px 3px rgba(0,0,0,0.2),
+    inset -1px -1px 0 rgba(255,255,255,0.3);
+}
+
+.bevel-frame {
+  border: 4px solid;
+  border-color: #bae6fd #0369a1 #0369a1 #bae6fd;
+  box-shadow:
+    inset 2px 2px 0 rgba(255,255,255,0.4),
+    inset -2px -2px 0 rgba(0,0,0,0.15),
+    3px 3px 6px rgba(0,0,0,0.2);
+  padding: 4px;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+}
+
+/* Rainbow Gradient Divider */
+.rainbow-divider {
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #f43f5e,
+    #f97316,
+    #facc15,
+    #22d3a0,
+    #0ea5e9,
+    #8b5cf6,
+    #f43f5e
+  );
+  background-size: 200% 100%;
+  animation: rainbow-slide 3s linear infinite;
+  border: none;
+}
+
+@keyframes rainbow-slide {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Glow Text Effects */
+.glow-text {
+  text-shadow:
+    0 0 10px rgba(14, 165, 233, 0.5),
+    0 0 20px rgba(14, 165, 233, 0.3),
+    0 0 40px rgba(14, 165, 233, 0.1);
+}
+
+.glow-text-sunset {
+  text-shadow:
+    0 0 10px rgba(249, 115, 22, 0.5),
+    0 0 20px rgba(249, 115, 22, 0.3),
+    0 0 40px rgba(249, 115, 22, 0.1);
+}
+
+.glow-text-coral {
+  text-shadow:
+    0 0 10px rgba(244, 63, 94, 0.5),
+    0 0 20px rgba(244, 63, 94, 0.3);
+}
+
+/* Sparkle Decoration (CSS diamond shapes, no emoji) */
+.sparkle::before,
+.sparkle::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #facc15;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.sparkle::before {
+  top: -8px;
+  left: -8px;
+}
+
+.sparkle::after {
+  bottom: -8px;
+  right: -8px;
+  animation-delay: 0.75s;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #38bdf8, #0ea5e9);
+  border: 2px solid #e0f2fe;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0ea5e9, #0284c7);
+}
+
+/* Marquee container */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Y2K Button Styles — chunky, saturated, retro */
+.btn-y2k {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  font-family: var(--font-comic);
+  font-weight: bold;
+  border: 3px solid;
+  border-color: #7dd3fc #034e7b #034e7b #7dd3fc;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #38bdf8 0%, #0ea5e9 40%, #0284c7 100%);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+  transition: all 0.1s;
+  box-shadow: 3px 3px 0 #034e7b, inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.btn-y2k:hover {
+  background: linear-gradient(180deg, #7dd3fc 0%, #38bdf8 40%, #0ea5e9 100%);
+  box-shadow: 2px 2px 0 #034e7b, inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.btn-y2k:active {
+  border-color: #034e7b #7dd3fc #7dd3fc #034e7b;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.3);
+  transform: translate(2px, 2px);
+}
+
+.btn-y2k-coral {
+  border-color: #fda4af #7f1d2d #7f1d2d #fda4af;
+  background: linear-gradient(180deg, #fb7185 0%, #f43f5e 40%, #e11d48 100%);
+  color: #fff;
+  box-shadow: 3px 3px 0 #7f1d2d, inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.btn-y2k-coral:hover {
+  background: linear-gradient(180deg, #fda4af 0%, #fb7185 40%, #f43f5e 100%);
+  box-shadow: 2px 2px 0 #7f1d2d, inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.btn-y2k-sunset {
+  border-color: #fdba74 #7c2d12 #7c2d12 #fdba74;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #fb923c 0%, #f97316 40%, #ea580c 100%);
+  color: #fff;
+  box-shadow: 3px 3px 0 #7c2d12, inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.btn-y2k-sunset:hover {
+  background: linear-gradient(180deg, #fdba74 0%, #fb923c 40%, #f97316 100%);
+  box-shadow: 2px 2px 0 #7c2d12, inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+/* Wave border */
+.wave-border-top {
+  position: relative;
+}
+
+.wave-border-top::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: url("data:image/svg+xml,%3Csvg width='120' height='10' viewBox='0 0 120 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5 Q15 0 30 5 Q45 10 60 5 Q75 0 90 5 Q105 10 120 5' fill='none' stroke='%230ea5e9' stroke-width='2'/%3E%3C/svg%3E") repeat-x;
+}
+
+.wave-border-bottom {
+  position: relative;
+}
+
+.wave-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: url("data:image/svg+xml,%3Csvg width='120' height='10' viewBox='0 0 120 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5 Q15 0 30 5 Q45 10 60 5 Q75 0 90 5 Q105 10 120 5' fill='none' stroke='%230ea5e9' stroke-width='2'/%3E%3C/svg%3E") repeat-x;
+}
+
+/* Retro link styling */
+.retro-link {
+  color: #0284c7;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #38bdf8;
+  text-underline-offset: 3px;
+}
+
+.retro-link:hover {
+  color: #f97316;
+  text-decoration-color: #fdba74;
+}
+
+.retro-link:visited {
+  color: #8b5cf6;
+}
+
+/* Y2K Card */
+.y2k-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+  border: 3px solid;
+  border-color: #bae6fd #0369a1 #0369a1 #bae6fd;
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.6),
+    3px 3px 6px rgba(0,0,0,0.15);
+  padding: 1.5rem;
+}
+
+/* Sunset gradient backgrounds */
+.bg-gradient-sunset {
+  background: linear-gradient(135deg, #fff7ed, #ffedd5, #fed7aa);
+}
+
+.bg-gradient-ocean {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #bae6fd);
+}
+
+.bg-gradient-fog {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff, #e9d5ff);
+}
+
+/* Under construction badge */
+.under-construction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  background: repeating-linear-gradient(
+    45deg,
+    #facc15,
+    #facc15 10px,
+    #0c4a6e 10px,
+    #0c4a6e 20px
+  );
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-shadow: 1px 1px 0 black;
+}
+
+/* Pixel art rendering */
+.pixel-render {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Table styles for admin */
+.y2k-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 3px solid;
+  border-color: #bae6fd #0369a1 #0369a1 #bae6fd;
+}
+
+.y2k-table th {
+  background: linear-gradient(180deg, #e0f2fe, #bae6fd);
+  border-bottom: 2px solid #0369a1;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  font-weight: bold;
+  color: #0c4a6e;
+}
+
+.y2k-table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e0f2fe;
+}
+
+.y2k-table tr:nth-child(even) {
+  background-color: #f0f9ff;
+}
+
+.y2k-table tr:hover {
+  background-color: #e0f2fe;
+}

@@ -1,0 +1,17 @@
+{
+  "message": "Your presence is the greatest gift! But if you'd like to contribute, here are a few options:",
+  "registries": [
+    {
+      "name": "Honeymoon Fund",
+      "description": "Help us catch waves in Bali for our honeymoon!",
+      "url": "https://example.com/honeymoon-fund",
+      "icon": "plane"
+    },
+    {
+      "name": "Crate & Barrel",
+      "description": "Classic registry for home goods",
+      "url": "https://example.com/crate-barrel",
+      "icon": "home"
+    }
+  ]
+}

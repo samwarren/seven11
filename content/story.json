@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "year": "2019",
+      "title": "First Wave",
+      "description": "We met at a mutual friend's bonfire on Stinson Beach. Sam tried to impress Maria with a surfing story that turned out to be wildly exaggerated. Maria was charmed anyway.",
+      "image": "/images/story-bonfire.jpg"
+    },
+    {
+      "year": "2020",
+      "title": "Lockdown Love",
+      "description": "When the world went quiet, we found our rhythm together. Long walks through the fog, cooking experiments (some successful), and endless card games.",
+      "image": "/images/story-lockdown.jpg"
+    },
+    {
+      "year": "2021",
+      "title": "Adventure Begins",
+      "description": "Our first big trip together — a road trip up the Northern California coast. We drove through redwoods, ate fish tacos in every town, and knew this was forever.",
+      "image": "/images/story-roadtrip.jpg"
+    },
+    {
+      "year": "2022",
+      "title": "Moving In",
+      "description": "We found our little place with a view of the fog rolling over the hills. It finally felt like home — messy kitchen and all.",
+      "image": "/images/story-home.jpg"
+    },
+    {
+      "year": "2023",
+      "title": "The Furry Addition",
+      "description": "We adopted Biscuit, our golden retriever who loves the beach even more than we do. Our family was growing!",
+      "image": "/images/story-biscuit.jpg"
+    },
+    {
+      "year": "2024",
+      "title": "The Big Question",
+      "description": "On a foggy morning hike at Point Reyes, Sam got down on one knee. Maria said yes before Sam could even finish the question. The seals were our witnesses.",
+      "image": "/images/story-proposal.jpg"
+    },
+    {
+      "year": "2025",
+      "title": "Tying the Knot!",
+      "description": "And now we're getting married right where it all started -- on the beach, surrounded by the people we love most.",
+      "image": "/images/story-wedding.jpg"
+    }
+  ]
+}

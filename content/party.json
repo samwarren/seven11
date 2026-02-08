@@ -1,0 +1,56 @@
+{
+  "groups": [
+    {
+      "label": "Sam's Side",
+      "members": [
+        {
+          "name": "Jordan",
+          "role": "Best Person",
+          "relation": "Sam's sibling & lifelong partner in crime",
+          "bio": "Has been Sam's biggest hype person since day one. Known for legendary toast speeches and even more legendary dance moves.",
+          "image": "/images/party-jordan.jpg"
+        },
+        {
+          "name": "Mike",
+          "role": "Groomsperson",
+          "relation": "College roommate",
+          "bio": "Sam and Mike survived four years of dorm life together. Mike introduced Sam to surfing (and to the concept of sunscreen).",
+          "image": "/images/party-mike.jpg"
+        },
+        {
+          "name": "Taylor",
+          "role": "Groomsperson",
+          "relation": "Childhood friend",
+          "bio": "Taylor and Sam have been friends since building sandcastles at age 5. Some things never change — the sandcastles just got bigger.",
+          "image": "/images/party-taylor.jpg"
+        }
+      ]
+    },
+    {
+      "label": "Maria's Side",
+      "members": [
+        {
+          "name": "Casey",
+          "role": "Maid of Honor",
+          "relation": "Maria's best friend since high school",
+          "bio": "Casey and Maria have been inseparable for over a decade. Casey is the reason Maria was at that fateful bonfire in 2019.",
+          "image": "/images/party-casey.jpg"
+        },
+        {
+          "name": "Riley",
+          "role": "Bridesperson",
+          "relation": "College friend",
+          "bio": "Riley and Maria bonded over late-night study sessions and a shared love of bad horror movies. The tradition continues.",
+          "image": "/images/party-riley.jpg"
+        },
+        {
+          "name": "Morgan",
+          "role": "Bridesperson",
+          "relation": "Cousin & confidant",
+          "bio": "Family by blood, best friends by choice. Morgan has the best stories about Maria from childhood that may or may not come up in a toast.",
+          "image": "/images/party-morgan.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "hotels": [
+    {
+      "name": "Sandpiper Lodging",
+      "address": "1 Marine Way, Stinson Beach, CA 94970",
+      "description": "Right on the beach! The closest stay to the venue. Book early — rooms go fast in summer.",
+      "priceRange": "$$$$",
+      "bookingUrl": "https://example.com/sandpiper",
+      "distanceToVenue": "2 min walk"
+    },
+    {
+      "name": "The Pelican Inn",
+      "address": "10 Pacific Way, Muir Beach, CA 94965",
+      "description": "A charming English-style inn just 15 minutes from Stinson Beach. Great breakfast included!",
+      "priceRange": "$$$",
+      "bookingUrl": "https://example.com/pelican-inn",
+      "distanceToVenue": "15 min drive"
+    },
+    {
+      "name": "Mill Valley Inn",
+      "address": "165 Throckmorton Ave, Mill Valley, CA 94941",
+      "description": "A cozy boutique hotel in the heart of Mill Valley. Perfect base for exploring Marin County.",
+      "priceRange": "$$$",
+      "bookingUrl": "https://example.com/mill-valley-inn",
+      "distanceToVenue": "25 min drive"
+    },
+    {
+      "name": "Holiday Inn Express Sausalito",
+      "address": "100 Shoreline Hwy, Sausalito, CA 94965",
+      "description": "Budget-friendly option with great views of the bay. About 30 minutes from the venue.",
+      "priceRange": "$$",
+      "bookingUrl": "https://example.com/holiday-inn",
+      "distanceToVenue": "30 min drive"
+    }
+  ],
+  "transportation": [
+    {
+      "title": "From San Francisco International Airport (SFO)",
+      "description": "SFO is about 45 minutes to 1 hour south of Stinson Beach. We recommend renting a car — the drive up through Mill Valley and over Mt. Tam is gorgeous!"
+    },
+    {
+      "title": "From Oakland International Airport (OAK)",
+      "description": "OAK is about 1 hour east. Take the Richmond-San Rafael Bridge for a scenic route, or come through SF via the Bay Bridge."
+    },
+    {
+      "title": "Rideshare & Taxis",
+      "description": "Uber and Lyft service the area, but availability can be limited in Stinson Beach, especially late at night. Plan ahead for your return trip!"
+    },
+    {
+      "title": "Parking",
+      "description": "Free parking is available at the venue and along Shoreline Highway. Arrive a bit early on the wedding day to snag a good spot."
+    }
+  ],
+  "thingsToKnow": [
+    {
+      "title": "Weather",
+      "description": "July in Stinson Beach is usually sunny with temperatures around 65-75°F. However, the famous NorCal fog can roll in quickly — bring a light jacket or shawl for the evening!"
+    },
+    {
+      "title": "Beach Attire Tips",
+      "description": "The ceremony is on the sand! We recommend wedges or block heels instead of stilettos, or go barefoot — we will be! Sunglasses encouraged."
+    },
+    {
+      "title": "Cell Service",
+      "description": "Cell service can be spotty in Stinson Beach. Download offline maps before you head out, and embrace the digital detox vibes!"
+    },
+    {
+      "title": "Things To Do",
+      "description": "If you're making a trip of it, don't miss: hiking in Muir Woods, driving the Pacific Coast Highway, exploring Point Reyes, and grabbing fish tacos at the local spots."
+    }
+  ]
+}

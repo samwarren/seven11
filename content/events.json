@@ -1,0 +1,43 @@
+{
+  "events": [
+    {
+      "id": "ceremony",
+      "name": "Ceremony",
+      "date": "2025-07-11T16:00:00-07:00",
+      "endTime": "2025-07-11T17:00:00-07:00",
+      "venue": "Stinson Beach",
+      "address": "3500 Shoreline Hwy, Stinson Beach, CA 94970",
+      "description": "Join us as we tie the knot with our toes in the sand and the Pacific Ocean as our backdrop. Please arrive 15 minutes early!",
+      "dressCode": "Beach Formal",
+      "mapUrl": "https://maps.google.com/?q=Stinson+Beach+CA",
+      "mealOptions": [],
+      "allowPlusOnes": true
+    },
+    {
+      "id": "reception",
+      "name": "Reception",
+      "date": "2025-07-11T17:30:00-07:00",
+      "endTime": "2025-07-11T23:00:00-07:00",
+      "venue": "Stinson Beach Community Center",
+      "address": "32 Belvedere Ave, Stinson Beach, CA 94970",
+      "description": "Dinner, dancing, and celebrating under the stars! Prepare for epic surf tunes, killer food, and a night to remember.",
+      "dressCode": "Beach Formal",
+      "mapUrl": "https://maps.google.com/?q=Stinson+Beach+Community+Center",
+      "mealOptions": ["Grilled Salmon", "Tri-Tip Steak", "Veggie Bowl", "Kids Meal"],
+      "allowPlusOnes": true
+    },
+    {
+      "id": "welcome-drinks",
+      "name": "Welcome Drinks",
+      "date": "2025-07-10T18:00:00-07:00",
+      "endTime": "2025-07-10T21:00:00-07:00",
+      "venue": "The Siren",
+      "address": "3468 Shoreline Hwy, Stinson Beach, CA 94970",
+      "description": "Kick off the wedding weekend with casual drinks and appetizers at our favorite local spot. Come as you are!",
+      "dressCode": "Casual",
+      "mapUrl": "https://maps.google.com/?q=The+Siren+Stinson+Beach",
+      "mealOptions": [],
+      "allowPlusOnes": true
+    }
+  ]
+}

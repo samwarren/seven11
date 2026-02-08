@@ -1,0 +1,34 @@
+{
+  "photos": [
+    {
+      "src": "/images/gallery/photo-01.jpg",
+      "caption": "The night we met",
+      "alt": "Bonfire on Stinson Beach"
+    },
+    {
+      "src": "/images/gallery/photo-02.jpg",
+      "caption": "Road trip up the coast",
+      "alt": "Pacific Coast Highway view"
+    },
+    {
+      "src": "/images/gallery/photo-03.jpg",
+      "caption": "Our favorite hike",
+      "alt": "Foggy hike at Point Reyes"
+    },
+    {
+      "src": "/images/gallery/photo-04.jpg",
+      "caption": "Biscuit's first beach day",
+      "alt": "Golden retriever on the beach"
+    },
+    {
+      "src": "/images/gallery/photo-05.jpg",
+      "caption": "The proposal!",
+      "alt": "Proposal at Point Reyes"
+    },
+    {
+      "src": "/images/gallery/photo-06.jpg",
+      "caption": "Celebrating with friends",
+      "alt": "Engagement celebration"
+    }
+  ]
+}
