@@ -3,19 +3,20 @@
     "partner1": "Sam",
     "partner2": "Maria"
   },
-  "weddingDate": "2025-07-11T16:00:00-07:00",
+  "weddingDate": "2025-11-06T16:00:00-08:00",
   "venue": {
-    "name": "Stinson Beach",
-    "address": "3500 Shoreline Hwy",
-    "city": "Stinson Beach, CA",
-    "mapUrl": "https://maps.google.com/?q=Stinson+Beach+CA"
+    "name": "Asilomar Conference Grounds",
+    "address": "800 Asilomar Ave",
+    "city": "Pacific Grove, CA",
+    "siteUrl": "https://www.visitasilomar.com/",
+    "mapUrl": "https://www.google.com/maps/place/Asilomar+Hotel+and+Conference+Grounds/@36.6191335,-121.9375932,17z/data=!3m1!4b1!4m9!3m8!1s0x808de1301ce496cb:0x763d96cf8eb0e519!5m2!4m1!1i2!8m2!3d36.6191335!4d-121.9375932!16s%2Fm%2F03w9nhs"
   },
   "welcomeMessage": "Welcome to our totally rad wedding website!",
-  "tagline": "Catching waves & catching feelings since 2019",
+  "tagline": "Catching waves & catching feelings since 2023",
   "rsvpFormUrl": "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform",
   "meta": {
-    "title": "Sam & Maria's Wedding | July 11, 2025",
-    "description": "Join us for a beach wedding celebration at Stinson Beach, Northern California. RSVP, find travel info, and sign our guestbook!"
+    "title": "Sam & Maria's Wedding | November 6-8, 2025",
+    "description": "Join us for a beach wedding celebration at Asilomar, Pacific Grove, California. RSVP, find travel info, and sign our guestbook!"
   },
   "features": {
     "guestbook": true,

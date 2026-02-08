@@ -23,20 +23,20 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="bevel-raised sticky top-0 z-40 bg-gradient-to-r from-ocean-50 via-ocean-100 to-seafoam-50">
+    <nav className="sticky top-0 z-40 border-b-2 border-ocean-200 bg-gradient-to-r from-ocean-50 via-ocean-100 to-seafoam-50 shadow-sm">
       <div className="mx-auto max-w-6xl px-4">
         {/* Desktop nav */}
-        <div className="hidden flex-wrap items-center justify-center gap-1 py-2 md:flex">
+        <div className="hidden flex-wrap items-center justify-center gap-4 py-3 md:flex">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`btn-y2k px-3 py-1.5 text-sm transition-all ${
+                className={`retro-link inline-flex items-center gap-1 text-sm transition-all ${
                   isActive
-                    ? 'border-ocean-700 bg-gradient-to-b from-ocean-200 to-ocean-300 font-bold text-ocean-900'
-                    : ''
+                    ? 'font-bold text-ocean-800'
+                    : 'text-ocean-600'
                 }`}
               >
                 <PixelIcon name={link.icon} size={14} />
@@ -53,7 +53,7 @@ export function Navbar() {
           </Link>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="btn-y2k p-2"
+            className="p-2 text-ocean-600"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -62,7 +62,7 @@ export function Navbar() {
 
         {/* Mobile nav menu */}
         {mobileOpen && (
-          <div className="flex flex-col gap-1 pb-3 md:hidden">
+          <div className="flex flex-col gap-2 pb-3 md:hidden">
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -70,8 +70,8 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`btn-y2k w-full text-center text-sm ${
-                    isActive ? 'font-bold text-ocean-900' : ''
+                  className={`retro-link inline-flex items-center gap-2 py-1 text-sm ${
+                    isActive ? 'font-bold text-ocean-800' : 'text-ocean-600'
                   }`}
                 >
                   <PixelIcon name={link.icon} size={14} />

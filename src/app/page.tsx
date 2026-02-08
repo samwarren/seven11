@@ -1,30 +1,15 @@
-import { getSiteConfig, getEvents } from '@/lib/content';
-import { formatDate } from '@/lib/utils';
+import { getSiteConfig } from '@/lib/content';
 import { CountdownTimer } from '@/components/countdown/CountdownTimer';
 import { MarqueeText } from '@/components/y2k/MarqueeText';
 import { RainbowDivider } from '@/components/y2k/RainbowDivider';
 import { BlinkText } from '@/components/y2k/BlinkText';
 import { FloatingElement } from '@/components/y2k/FloatingElement';
-import { BeveledButton } from '@/components/y2k/BeveledButton';
 import { WaveAnimation } from '@/components/y2k/WaveAnimation';
 import { PixelIcon } from '@/components/y2k/PixelIcon';
 import { PageWrapper } from '@/components/layout/PageWrapper';
 
-const QUICK_LINKS = [
-  { href: '/our-story', label: 'Our Story', icon: 'heart' },
-  { href: '/events', label: 'Events', icon: 'calendar' },
-  { href: '/wedding-party', label: 'Wedding Party', icon: 'people' },
-  { href: '/gallery', label: 'Gallery', icon: 'camera' },
-  { href: '/travel', label: 'Travel', icon: 'plane' },
-  { href: '/rsvp', label: 'RSVP', icon: 'mail' },
-  { href: '/guestbook', label: 'Guestbook', icon: 'pencil' },
-  { href: '/faq', label: 'FAQ', icon: 'question' },
-];
-
 export default function HomePage() {
   const site = getSiteConfig();
-  const events = getEvents();
-  const ceremony = events.find((e) => e.id === 'ceremony');
 
   return (
     <>
@@ -35,7 +20,7 @@ export default function HomePage() {
             <PixelIcon name="wave" size={12} />
             {site.couple.partner1} & {site.couple.partner2} are getting married!
             <PixelIcon name="surfer" size={12} />
-            Save the date: {formatDate(site.weddingDate)}
+            November 6th&ndash;8th, 2025
             <PixelIcon name="dolphin" size={12} />
             {site.tagline}
             <PixelIcon name="sunset" size={12} />
@@ -83,6 +68,37 @@ export default function HomePage() {
 
         <RainbowDivider />
 
+        {/* Date & Venue */}
+        <div className="y2k-card mx-auto my-12 max-w-lg">
+          <h2 className="mb-4 font-display text-3xl text-ocean-700">
+            November 6th&ndash;8th
+          </h2>
+          <p className="mb-2 text-lg font-bold">
+            <a
+              href="https://www.visitasilomar.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="retro-link inline-flex items-center gap-2 text-ocean-600"
+            >
+              <PixelIcon name="wave" size={16} />
+              Asilomar Conference Grounds
+              <PixelIcon name="wave" size={16} />
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.google.com/maps/place/Asilomar+Hotel+and+Conference+Grounds/@36.6191335,-121.9375932,17z/data=!3m1!4b1!4m9!3m8!1s0x808de1301ce496cb:0x763d96cf8eb0e519!5m2!4m1!1i2!8m2!3d36.6191335!4d-121.9375932!16s%2Fm%2F03w9nhs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="retro-link inline-flex items-center gap-1 text-sm text-ocean-500"
+            >
+              <PixelIcon name="map" size={14} />
+              Pacific Grove, CA
+              <PixelIcon name="pin" size={14} />
+            </a>
+          </p>
+        </div>
+
         {/* Countdown */}
         <div className="my-12">
           <h2 className="mb-6 inline-flex items-center gap-2 font-pixel text-sm text-ocean-600">
@@ -95,49 +111,12 @@ export default function HomePage() {
 
         <RainbowDivider />
 
-        {/* Date & Venue info */}
-        <div className="y2k-card mx-auto my-12 max-w-lg">
-          <h3 className="mb-3 font-display text-2xl text-ocean-700">
-            {formatDate(site.weddingDate)}
-          </h3>
-          {ceremony && (
-            <>
-              <p className="text-lg font-bold text-ocean-600">{ceremony.venue}</p>
-              <p className="text-ocean-500">{ceremony.address}</p>
-              <p className="mt-2 text-sm text-ocean-400">
-                Dress Code: {ceremony.dressCode}
-              </p>
-            </>
-          )}
-        </div>
-
         {/* Welcome message */}
         <div className="my-8">
           <p className="text-lg text-ocean-700">{site.welcomeMessage}</p>
         </div>
 
         <WaveAnimation className="my-8" />
-
-        {/* Quick links */}
-        <div className="my-12">
-          <h2 className="mb-6 inline-flex items-center gap-2 font-pixel text-sm text-ocean-600">
-            <PixelIcon name="compass" size={16} />
-            Explore Our Site
-            <PixelIcon name="compass" size={16} />
-          </h2>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {QUICK_LINKS.map((link) => (
-              <BeveledButton
-                key={link.href}
-                href={link.href}
-                className="flex-col gap-1 px-4 py-4 text-center"
-              >
-                <PixelIcon name={link.icon} size={24} />
-                <span className="text-xs">{link.label}</span>
-              </BeveledButton>
-            ))}
-          </div>
-        </div>
 
         <RainbowDivider />
 
