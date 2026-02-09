@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Press_Start_2P, Pacifico } from 'next/font/google';
-import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SparkleTrail } from '@/components/y2k/SparkleTrail';
 import { DogCursor } from '@/components/y2k/DogCursor';
@@ -45,7 +44,6 @@ export default function RootLayout({
         <SparkleTrail />
         <DogCursor />
         <div className="relative z-20 flex min-h-screen flex-col">
-          <Navbar />
           <div className="flex-1">{children}</div>
           <Footer />
         </div>

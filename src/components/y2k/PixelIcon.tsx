@@ -94,6 +94,48 @@ const ICONS: Record<string, () => React.ReactNode> = {
       <path d="M2 7Q3 5.5 4 7" fill="none" stroke="#fff" strokeWidth="0.8" opacity="0.6" />
     </>
   ),
+  otter: () => (
+    <>
+      {/* body - lying on back */}
+      <ellipse cx="8" cy="9" rx="5" ry="3" fill="#8B6940" />
+      <ellipse cx="8" cy="9" rx="4" ry="2.3" fill="#A07850" />
+      {/* lighter belly */}
+      <ellipse cx="8" cy="8.5" rx="3" ry="1.8" fill="#C8A878" />
+      {/* head */}
+      <circle cx="8" cy="5" r="2.8" fill="#8B6940" />
+      <circle cx="8" cy="5.3" r="2" fill="#A07850" />
+      {/* lighter face */}
+      <ellipse cx="8" cy="5.8" rx="1.8" ry="1.2" fill="#D4B890" />
+      {/* ears */}
+      <circle cx="5.8" cy="3.5" r="0.9" fill="#8B6940" />
+      <circle cx="10.2" cy="3.5" r="0.9" fill="#8B6940" />
+      <circle cx="5.8" cy="3.5" r="0.5" fill="#C8A878" />
+      <circle cx="10.2" cy="3.5" r="0.5" fill="#C8A878" />
+      {/* eyes */}
+      <circle cx="6.8" cy="4.8" r="0.6" fill="#1a1a1a" />
+      <circle cx="9.2" cy="4.8" r="0.6" fill="#1a1a1a" />
+      <circle cx="7" cy="4.6" r="0.2" fill="#fff" />
+      <circle cx="9.4" cy="4.6" r="0.2" fill="#fff" />
+      {/* nose */}
+      <ellipse cx="8" cy="5.8" rx="0.6" ry="0.4" fill="#3a2a1a" />
+      {/* whiskers */}
+      <line x1="5" y1="5.8" x2="6.5" y2="5.5" stroke="#A07850" strokeWidth="0.3" />
+      <line x1="5.2" y1="6.3" x2="6.5" y2="6" stroke="#A07850" strokeWidth="0.3" />
+      <line x1="11" y1="5.8" x2="9.5" y2="5.5" stroke="#A07850" strokeWidth="0.3" />
+      <line x1="10.8" y1="6.3" x2="9.5" y2="6" stroke="#A07850" strokeWidth="0.3" />
+      {/* little paws holding up */}
+      <ellipse cx="5.5" cy="7.5" rx="1" ry="0.7" fill="#8B6940" />
+      <ellipse cx="10.5" cy="7.5" rx="1" ry="0.7" fill="#8B6940" />
+      {/* hind feet */}
+      <ellipse cx="4" cy="11.5" rx="1.2" ry="0.6" fill="#6B5030" />
+      <ellipse cx="12" cy="11.5" rx="1.2" ry="0.6" fill="#6B5030" />
+      {/* tail */}
+      <path d="M13 9Q14 10 14.5 12Q15 13 14 13" fill="#7B5930" stroke="#6B5030" strokeWidth="0.3" />
+      {/* water ripple underneath */}
+      <path d="M2 12.5Q5 11.5 8 12.5Q11 13.5 14 12.5" fill="none" stroke="#7dd3fc" strokeWidth="0.6" opacity="0.6" />
+      <path d="M1 14Q4 13 8 14Q12 15 15 14" fill="none" stroke="#7dd3fc" strokeWidth="0.5" opacity="0.4" />
+    </>
+  ),
   surfer: () => (
     <>
       <circle cx="8" cy="3" r="2" fill="#fdba74" />

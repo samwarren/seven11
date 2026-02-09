@@ -19,8 +19,8 @@ export default function HomePage() {
           <span className="inline-flex items-center gap-2 font-pixel text-xs">
             <PixelIcon name="wave" size={12} />
             {site.couple.partner1} & {site.couple.partner2} are getting married!
-            <PixelIcon name="surfer" size={12} />
-            November 6th&ndash;8th, 2025
+            <PixelIcon name="otter" size={12} />
+            November 6th&ndash;8th, 2026
             <PixelIcon name="dolphin" size={12} />
             {site.tagline}
             <PixelIcon name="sunset" size={12} />
@@ -32,7 +32,7 @@ export default function HomePage() {
         {/* Floating decorations */}
         <div className="pointer-events-none absolute left-4 top-32 hidden lg:block">
           <FloatingElement delay={0} duration={7}>
-            <PixelIcon name="surfer" size={40} />
+            <PixelIcon name="otter" size={40} />
           </FloatingElement>
         </div>
         <div className="pointer-events-none absolute right-8 top-48 hidden lg:block">
