@@ -6,10 +6,8 @@ export async function GET() {
     const supabase = createAdminClient();
 
     const { data, error } = await supabase
-      .from('guestbook_entries')
-      .select('id, name, message, created_at')
-      .eq('is_approved', true)
-      .order('created_at', { ascending: false });
+      .from('guestbook')
+      .select('name, message');
 
     if (error) {
       console.error('Guestbook fetch error:', error);
@@ -49,7 +47,7 @@ export async function POST(request: NextRequest) {
 
     const supabase = createAdminClient();
 
-    const { error } = await supabase.from('guestbook_entries').insert({
+    const { error } = await supabase.from('guestbook').insert({
       name: name.trim(),
       message: message.trim(),
     });

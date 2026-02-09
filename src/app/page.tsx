@@ -71,11 +71,6 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* Tagline */}
-        <p className="mx-auto mb-8 max-w-lg text-lg text-ocean-600 italic">
-          &ldquo;{site.tagline}&rdquo;
-        </p>
-
         <RainbowDivider />
 
         {/* Date & Venue */}
