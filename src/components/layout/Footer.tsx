@@ -1,7 +1,6 @@
 'use client';
 
 import { HitCounter } from '@/components/y2k/HitCounter';
-import { WebRing } from '@/components/y2k/WebRing';
 import { RainbowDivider } from '@/components/y2k/RainbowDivider';
 import { WaveAnimation } from '@/components/y2k/WaveAnimation';
 import { PixelIcon } from '@/components/y2k/PixelIcon';
@@ -12,8 +11,6 @@ export function Footer() {
       <WaveAnimation />
       <div className="bg-ocean-800 px-4 py-8 text-center text-ocean-200">
         <div className="mx-auto max-w-4xl space-y-4">
-          <WebRing />
-
           <RainbowDivider />
 
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs">

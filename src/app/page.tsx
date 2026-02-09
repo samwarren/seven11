@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { getSiteConfig } from '@/lib/content';
 import { CountdownTimer } from '@/components/countdown/CountdownTimer';
 import { MarqueeText } from '@/components/y2k/MarqueeText';
@@ -7,8 +9,16 @@ import { FloatingElement } from '@/components/y2k/FloatingElement';
 import { WaveAnimation } from '@/components/y2k/WaveAnimation';
 import { PixelIcon } from '@/components/y2k/PixelIcon';
 import { PageWrapper } from '@/components/layout/PageWrapper';
+import { BouncingPhotos } from '@/components/y2k/BouncingPhotos';
+
+function getPicsPhotos() {
+  const dir = path.join(process.cwd(), 'public/images/pics');
+  const files = fs.readdirSync(dir).filter((f) => /\.(jpe?g|png|webp)$/i.test(f)).sort();
+  return files.map((f) => ({ src: `/images/pics/${f}`, alt: f.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ') }));
+}
 
 export default function HomePage() {
+  const photos = getPicsPhotos();
   const site = getSiteConfig();
 
   return (
@@ -107,6 +117,18 @@ export default function HomePage() {
             <PixelIcon name="hourglass" size={16} />
           </h2>
           <CountdownTimer targetDate={site.weddingDate} />
+        </div>
+
+        <RainbowDivider />
+
+        {/* Photo Gallery */}
+        <div className="my-12">
+          <h2 className="mb-6 inline-flex items-center gap-2 font-pixel text-sm text-ocean-600">
+            <PixelIcon name="camera" size={16} />
+            Our Adventures Together
+            <PixelIcon name="heart" size={16} />
+          </h2>
+          <BouncingPhotos photos={photos} />
         </div>
 
         <RainbowDivider />
