@@ -218,13 +218,15 @@ export default function GuestbookPage() {
               <div className="mb-2 flex items-center gap-2">
                 <PixelIcon name="star" size={14} />
                 <span className="font-bold text-ocean-700">{entry.name}</span>
-                <span className="text-xs text-ocean-400">
-                  {new Date(entry.created_at).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: 'numeric',
-                    year: 'numeric',
-                  })}
-                </span>
+                {entry.created_at && (
+                  <span className="text-xs text-ocean-400">
+                    {new Date(entry.created_at).toLocaleDateString('en-US', {
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric',
+                    })}
+                  </span>
+                )}
               </div>
               <p className="text-ocean-600">{entry.message}</p>
             </div>

@@ -7,8 +7,7 @@ export async function GET() {
 
     const { data, error } = await supabase
       .from('guestbook')
-      .select('name, message, created_at')
-      .order('created_at', { ascending: false });
+      .select('*');
 
     if (error) {
       console.error('Guestbook fetch error:', error);
